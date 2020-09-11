@@ -54,3 +54,10 @@ Her::API.setup url: "http://192.168.0.10:3001" do |c|
   c.use Faraday::Adapter::NetHttp
 end
 ```
+
+- このバージョンのRailsだとコントローラから使えない。
+
+app/controllers/get_article_controller.rb
+
+curl -X GET http://localhost:3000/get_article/1
+
